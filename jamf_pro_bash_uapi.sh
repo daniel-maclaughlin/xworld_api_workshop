@@ -22,7 +22,7 @@ getJsonValue() {
 #get token for UAPI communication
 bearer_token=$(curl -X POST \
 ${jamf_pro_url}/uapi/auth/tokens \
---header 'Content-Type: application/json' 
+--header 'Content-Type: application/json' \
 --user "${api_user}:${api_password}")
 echo ${bearer_token}
 
