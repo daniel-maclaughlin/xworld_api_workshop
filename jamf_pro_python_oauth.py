@@ -20,5 +20,12 @@ data = {
  
 
 response = requests.post(f'{jamf_pro_url}/api/oauth/token', headers=headers, data=data)
-print(response.status_code)
-print(response.json())
+
+
+jamf_pro_token = response.json()['token']
+
+token_headers = {
+	"Content-Type": "application/json",
+	"Accept": "application/json",
+	"Authorization": f'Bearer {jamf_pro_token}'
+}
