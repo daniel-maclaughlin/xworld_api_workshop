@@ -4,10 +4,10 @@ import base64
 import requests
 
 
-jamf_pro_url = 'https://thegrid.jamfcloud.com'
+jamf_pro_url = 'https://server.jamfcloud.com'
 
 api_username = 'jssadmin'
-api_password = 'J@mf246810!'
+api_password = 'password'
 
 
 

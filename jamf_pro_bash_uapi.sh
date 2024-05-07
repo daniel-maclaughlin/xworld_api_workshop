@@ -33,9 +33,9 @@ echo ${api_token}
 
 
 # activation code
-activation_code=$(curl -X GET \ 
+activation_code=$(curl -X GET \
 ${jamf_pro_url}/JSSResource/activationcode \
 --header 'Accept: application/json' \
 --header 'Content-Type: application/json' \
---header "Authorization: Bearer  ${api_token}")
+--header "Authorization: Bearer ${api_token}")
 echo ${activation_code}
